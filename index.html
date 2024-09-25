@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Car Rentals</title>
+  </head>
+  <body>
+    <!-- first section -->
+    <section id="header" class="bg-[#c4c4c4] py-10">
+      <div class="">
+        <div
+          class="flex flex-row items-center justify-between space-x-2 mx-auto px-6"
+        >
+          <!-- logo -->
+          <img src="img/logo.jpeg" alt="" class="w-32 h-24 rounded-2xl" />
+          <!-- menu -->
+          <div class="hidden flex-row lg:flex items-center space-x-6">
+            <a
+              href="#home"
+              class="text-softBlack font-semibold hover:text-white"
+              >Home</a
+            >
+            <a
+              href="#how-it-work"
+              class="text-lg hover:text-softBlack text-white capitalize font-semibold"
+              >how it work</a
+            >
+            <a
+              href="#rentals"
+              class="text-lg hover:text-softBlack text-white capitalize font-semibold"
+              >rentals details</a
+            >
+            <a
+              href="#choose-us"
+              class="text-lg hover:text-softBlack text-white capitalize font-semibold"
+              >why choose us
+            </a>
+            <a
+              href="#testimonial"
+              class="text-lg hover:text-softBlack text-white capitalize font-semibold"
+              >testimonial</a
+            >
+            <div class="border-l border-white pl-4">
+              <a
+                href="#"
+                class="text-lg hover:border-b hover:border-white text-white capitalize font-semibold"
+              >
+                register
+              </a>
+            </div>
+            <!-- login menu -->
+            <div
+              class="px-7 py-3 rounded-lg bg-white text-softBlack hover:bg-softBlack hover:text-white"
+            >
+              <a href="#">Log In</a>
+            </div>
+          </div>
+          <!-- menu button -->
+          <div class="lg:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block menu lg:hidden focus:outline-none"
+            >
+              <span class="menu-top"></span>
+              <span class="menu-middle"></span>
+              <span class="menu-bottom"></span>
+            </button>
+          </div>
+        </div>
+        <div class="border-b border-[#9e9b9b] my-10"></div>
+        <!-- mobile menu -->
+        <div
+          id="menu"
+          class="hidden absolute lg:hidden top-10 bottom-0 right-0 w-72 md h-80 p-4 capitalize mr-2 text-lg text-white bg-black opacity-70 rounded-xl"
+        >
+          <div class="flex flex-col space-y-3 py-1 pt-4 pl-4">
+            <a href="#home" class="font-semibold hover:text-softBlack">Home</a>
+            <a href="#how-it-work" class="hover:text-softBlack font-semibold"
+              >how it work</a
+            >
+            <a href="#rentals" class="hover:text-softBlack font-semibold"
+              >rentals details</a
+            >
+            <a href="#choose-us" class="hover:text-softBlack font-semibold"
+              >why choose us
+            </a>
+            <a href="#testimonial" class="hover:text-softBlack font-semibold"
+              >testimonial</a
+            >
+            <a href="#" class="hover:text-softBlack capitalize font-semibold">
+              register
+            </a>
+            <a href="#" class="hover:text-softBlack capitalize font-semibold"
+              >Log In</a
+            >
+          </div>
+        </div>
+        <!-- content on header -->
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center space-y-10 lg:space-y-0 lg:space-x-10 mx-auto px-6"
+        >
+          <!-- text -->
+          <div
+            class="lg:w-1/2 py-20 flex flex-col text-center items-center lg:items-start lg:text-start space-y-6"
+          >
+            <p class="text-softBlack font-medium text-xl mb-6">
+              100% Trusted Car rental platform in the Country
+            </p>
+            <h1
+              class="text-4xl lg:text-5xl pb-7 font-extrabold tracking-wider lg:leading-[55.75px] uppercase"
+            >
+              fast and easy way to rent a car
+            </h1>
+            <p class="text-lg text-softBlack opacity-50 pb-7">
+              Our Car Rental online booking system designed to meet the specific
+              needs of car rental business owners. This easy-to-use car rental
+              software will let you manage.
+            </p>
+            <div
+              class="flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-20"
+            >
+              <button
+                class="px-20 py-5 bg-white text-softBlack text-lg rounded-md hover:bg-softBlack hover:text-white hover:scale-90 duration-150 transition"
+              >
+                Book Now
+              </button>
+              <a
+                href="#see-all-cars"
+                class="text-softBlack text-lg border-b border-softBlack tracking-wider hover:scale-125 duration-150 transition"
+                >See all cars</a
+              >
+            </div>
+          </div>
+          <!-- image -->
+          <div class="lg:w-1/2">
+            <img src="img/car-7-header.jpg" class="rounded-lg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- second section -->
+    <section id="pick-drop" class="mb-16 bg-[#f6f7f9]">
+      <!-- container  -->
+
+      <div class="rounded-lg container mx-auto px-6 py-4 mb-5">
+        <div class="flex flex-col items-center space-y-10">
+          <!-- pick up -->
+          <div class="flex flex-col items-start space-y-4">
+            <div class="flex items-center space-x-3">
+              <img src="img/circle.png" alt="" />
+              <h4 class="text-softBlack">Pick-Up</h4>
+            </div>
+            <div
+              class="flex flex-col md:flex-row items-start justify-between space-y-6"
+            >
+              <!-- location  -->
+              <div
+                class="flex flex-col space-y-1 items-start md:border-r border-gray-400 md:pr-8"
+              >
+                <h3 class="text-softBlack font-semibold tracking-wider">
+                  Locations
+                </h3>
+                <a href="#" class="flex items-center space-x-7">
+                  <p class="font-light text-softBlack opacity-70">
+                    Select your city
+                  </p>
+                  <img src="img/down-arrown.png" alt="" />
+                </a>
+              </div>
+              <!-- date -->
+              <div
+                class="flex flex-col space-y-1 items-start md:border-r border-gray-400 md:pr-8 md:pl-8"
+              >
+                <h3 class="text-softBlack font-semibold tracking-wider">
+                  Date
+                </h3>
+                <a href="#" class="flex items-center space-x-7">
+                  <p class="font-light text-softBlack opacity-70">
+                    Select your date
+                  </p>
+                  <img src="img/down-arrown.png" alt="" />
+                </a>
+              </div>
+              <!-- time -->
+              <div class="flex flex-col space-y-1 items-start md:pl-8">
+                <h3 class="text-softBlack font-semibold tracking-wider">
+                  Time
+                </h3>
+                <a href="#" class="flex items-center space-x-7">
+                  <p class="font-light text-softBlack opacity-70">
+                    Select your time
+                  </p>
+                  <img src="img/down-arrown.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- drop off -->
+          <div class="flex flex-col items-start space-y-4">
+            <div class="flex items-center space-x-3">
+              <img src="img/circle.png" alt="" />
+              <h4 class="text-softBlack">Drop-Off</h4>
+            </div>
+            <div
+              class="flex flex-col md:flex-row items-start justify-between space-y-6 md:space-y-0"
+            >
+              <!-- location  -->
+              <div
+                class="flex flex-col space-y-1 items-start md:border-r border-gray-400 md:pr-8"
+              >
+                <h3 class="text-softBlack font-semibold tracking-wider">
+                  Locations
+                </h3>
+                <a href="#" class="flex items-center space-x-7">
+                  <p class="font-light text-softBlack opacity-70">
+                    Select your city
+                  </p>
+                  <img src="img/down-arrown.png" alt="" />
+                </a>
+              </div>
+              <!-- date -->
+              <div
+                class="flex flex-col space-y-1 items-start md:border-r border-gray-400 md:pr-8 md:pl-8"
+              >
+                <h3 class="text-softBlack font-semibold tracking-wider">
+                  Date
+                </h3>
+                <a href="#" class="flex items-center space-x-7">
+                  <p class="font-light text-softBlack opacity-70">
+                    Select your date
+                  </p>
+                  <img src="img/down-arrown.png" alt="" />
+                </a>
+              </div>
+              <!-- time -->
+              <div class="flex flex-col space-y-1 items-start md:pl-8">
+                <h3 class="text-softBlack font-semibold tracking-wider">
+                  Time
+                </h3>
+                <a href="#" class="flex items-center space-x-7">
+                  <p class="font-light text-softBlack opacity-70">
+                    Select your time
+                  </p>
+                  <img src="img/down-arrown.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- search button -->
+          <div class="mx-auto flex items-center">
+            <button
+              class="px-16 py-4 bg-white shadow-2xl text-softBlack text-lg rounded-md hover:bg-softBlack hover:text-white hover:scale-90 duration-150 transition"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- how it work section -->
+    <section id="how-it-work" class="">
+      <div class="mx-auto px-6 container">
+        <h2
+          class="mb-6 text-3xl md:text-5xl text-softBlack tracking-wider text-center font-medium font-sans"
+        >
+          How it work
+        </h2>
+        <p class="text-center mb-10 leading-7 opacity-60">
+          A high performing web-based car rental system for any rent-a-car
+          company and website
+        </p>
+        <div
+          class="mb-20 flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0"
+        >
+          <!-- location -->
+          <div class="flex flex-col items-center space-y-6">
+            <div class="bg-[#ebe9e9] py-7 px-10 rounded-2xl">
+              <img src="img/location-icon.png" class="w-16" alt="" />
+            </div>
+            <h4 class="font-medium text-xl tracking-widest text-softBlack">
+              Choose Location
+            </h4>
+            <p class="opacity-60 max-w-xs text-center">
+              Aliquam erat volutpat. Integer malesuada turpis id fringilla
+              suscipit. Maecenas ultrices,orcivitae convallis mattis.
+            </p>
+          </div>
+          <!-- <div class="items-start -pl-52">
+            <img src="img/dynamic.png" alt="">
+          </div> -->
+          <!-- pick up -->
+          <div class="flex flex-col items-center space-y-6">
+            <div class="bg-[#ebe9e9] py-7 px-10 rounded-2xl">
+              <img src="img/pckup-icon.png" class="w-16" alt="" />
+            </div>
+            <h4 class="font-medium text-xl tracking-widest text-softBlack">
+              Pick-up Date
+            </h4>
+            <p class="opacity-60 max-w-xs text-center">
+              Aliquam erat volutpat. Integer malesuada turpis id fringilla
+              suscipit. Maecenas ultrices,orcivitae convallis mattis.
+            </p>
+          </div>
+          <!-- book car -->
+          <div class="flex flex-col items-center space-y-6">
+            <div class="bg-[#ebe9e9] py-7 px-10 rounded-2xl">
+              <img src="img/car icon.png" class="w-16" alt="" />
+            </div>
+            <h4 class="font-medium text-xl tracking-widest text-softBlack">
+              Book your car
+            </h4>
+            <p class="opacity-60 max-w-xs text-center">
+              Aliquam erat volutpat. Integer malesuada turpis id fringilla
+              suscipit. Maecenas ultrices,orcivitae convallis mattis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cars section -->
+
+    <section id="rentals" class="bg-[#eae7e7] py-10 pb-24">
+      <div class="mx-auto px-6">
+        <h2
+          class="mb-6 font-medium text-softBlack text-3xl md:text-4xl tracking-wider text-center capitalize"
+        >
+          Most popular car rental deals
+        </h2>
+        <p class="text-center mb-10 leading-7 opacity-60">
+          A high performing web-based car rental system for any rent-a-car
+          company and website
+        </p>
+        <!-- tab container -->
+        <div
+          class="flex flex-col md:flex-row items-center mx-auto md:border-b border-gray-400 space-y-6 md:space-y-0 mb-6"
+        >
+          <!-- first tab -->
+          <div
+            class="group flex justify-center text-center w-1/3 hover:border-b-4 hover:border-b-black"
+          >
+            <a
+              href="#"
+              class="tracking-wider py-3 text-blue-500 group-hover:text-softBlack"
+            >
+              Popular
+            </a>
+          </div>
+          <!-- second tab -->
+          <div
+            class="group flex justify-center text-center w-1/3 hover:border-b-4 hover:border-b-black"
+          >
+            <a
+              href="#"
+              class="tracking-wider py-3 text-blue-500 group-hover:text-softBlack"
+            >
+              Large Car
+            </a>
+          </div>
+          <!-- third tab -->
+          <div
+            class="group flex justify-center text-center w-1/3 hover:border-b-4 hover:border-b-black"
+          >
+            <a
+              href="#"
+              class="tracking-wider py-3 text-blue-500 group-hover:text-softBlack"
+            >
+              Small Car
+            </a>
+          </div>
+          <!-- fourth tab -->
+          <div
+            class="group flex justify-center text-center w-1/3 hover:border-b-4 hover:border-b-black"
+          >
+            <a
+              href="#"
+              class="tracking-wider py-3 text-blue-500 group-hover:text-softBlack"
+            >
+              Exclusve Car
+            </a>
+          </div>
+        </div>
+        <!-- Cars availabe -->
+        <div id="see-all-cars" class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-14">
+          <!-- first car -->
+          <div class="bg-[#c4c4c4] rounded-lg flex flex-col justify-between">
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-md text-softBlack">All New Rush</h5>
+              <img src="img/heart.png" class="heart cursor-pointer" alt="" />
+            </div>
+            <img src="img/car-2.jpg" class="" alt="" />
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-xl text-softBlack">
+                $85.00/
+                <span class="text-sm">day</span>
+              </h5>
+              <button
+                class="px-6 py-3 bg-white rounded-md hover:bg-softBlack hover:text-white"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <!-- second car -->
+          <div class="bg-[#c4c4c4] rounded-lg flex flex-col justify-between">
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-md text-softBlack">All New Rush</h5>
+              <img src="img/heart.png" class="heart cursor-pointer" alt="" />
+            </div>
+            <img src="img/car-1.jpg" class="" alt="" />
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-xl text-softBlack">
+                $72.00/
+                <span class="text-sm">day</span>
+              </h5>
+              <button
+                class="px-6 py-3 bg-white rounded-md hover:bg-softBlack hover:text-white"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <!-- third car -->
+          <div class="bg-[#c4c4c4] rounded-lg flex flex-col justify-between">
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-md text-softBlack">All New Rush</h5>
+              <img src="img/heart.png" class="heart cursor-pointer" alt="" />
+            </div>
+            <img src="img/car-3.jpg" class="" alt="" />
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-xl text-softBlack">
+                $72.00/
+                <span class="text-sm">day</span>
+              </h5>
+              <button
+                class="px-6 py-3 bg-white rounded-md hover:bg-softBlack hover:text-white"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <!-- fourth car -->
+          <div class="bg-[#c4c4c4] rounded-lg flex flex-col justify-between">
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-md text-softBlack">All New Rush</h5>
+              <img src="img/heart.png" class="heart cursor-pointer" alt="" />
+            </div>
+            <img src="img/car-4.jpg" class="" alt="" />
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-xl text-softBlack">
+                $56.00/
+                <span class="text-sm">day</span>
+              </h5>
+              <button
+                class="px-6 py-3 bg-white rounded-md hover:bg-softBlack hover:text-white"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <!-- fifth car -->
+          <div class="bg-[#c4c4c4] rounded-lg flex flex-col justify-between">
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-md text-softBlack">All New Rush</h5>
+              <img src="img/heart.png" class="heart cursor-pointer" alt="" />
+            </div>
+            <img src="img/car-5.jpg" class="" alt="" />
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-xl text-softBlack">
+                $62.00/
+                <span class="text-sm">day</span>
+              </h5>
+              <button
+                class="px-6 py-3 bg-white rounded-md hover:bg-softBlack hover:text-white"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <!-- sixth car -->
+          <div class="bg-[#c4c4c4] rounded-lg flex flex-col justify-between">
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-md text-softBlack">All New Rush</h5>
+              <img src="img/heart.png" class="heart cursor-pointer" alt="" />
+            </div>
+            <img src="img/car-6.jpg" class="" alt="" />
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-xl text-softBlack">
+                $92.00/
+                <span class="text-sm">day</span>
+              </h5>
+              <button
+                class="px-6 py-3 bg-white rounded-md hover:bg-softBlack hover:text-white"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <!-- seventh car -->
+          <div class="bg-[#c4c4c4] rounded-lg flex flex-col justify-between">
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-md text-softBlack">All New Rush</h5>
+              <img src="img/heart.png" class="heart cursor-pointer" alt="" />
+            </div>
+            <img src="img/car-9.jpg" class="" alt="" />
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-xl text-softBlack">
+                $72.00/
+                <span class="text-sm">day</span>
+              </h5>
+              <button
+                class="px-6 py-3 bg-white rounded-md hover:bg-softBlack hover:text-white"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+          <!-- eight car -->
+          <div class="bg-[#c4c4c4] rounded-lg flex flex-col justify-between">
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-md text-softBlack">All New Rush</h5>
+              <img src="img/heart.png" class="heart cursor-pointer" alt="" />
+            </div>
+            <img src="img/car-8.jpg" class="" alt="" />
+            <div class="flex items-center justify-between p-3">
+              <h5 class="font-medium text-xl text-softBlack">
+                $72.00/
+                <span class="text-sm">day</span>
+              </h5>
+              <button
+                class="px-6 py-3 bg-white rounded-md hover:bg-softBlack hover:text-white"
+              >
+                Rent Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between items-center">
+          <a
+            href="#"
+            class="px-14 py-5 bg-white text-softBlack text-lg rounded-md hover:bg-softBlack hover:text-white hover:scale-90 duration-150 transition"
+          >
+            Show more car
+          </a>
+          <a href="#" class="opacity-90 hover:opacity-60 border-b
+           border-softBlack tracking-wider hover:scale-125 duration-150 
+           transition md:mr-40"> 120 Cars </a>
+        </div>
+      </div>
+    </section>
+    <!-- why choose us section -->
+    <section id="choose-us" class="py-10">
+      <div class="mx-auto px-6">
+        <h2
+          class="mb-6 font-medium text-softBlack text-3xl md:text-4xl tracking-wider text-center capitalize"
+        >
+          Why choose us
+        </h2>
+        <p class="text-center mb-10 leading-7 opacity-60">
+          A high performing web-based car rental system for any rent-a-car
+          company and website
+        </p>
+        <div
+          class="flex flex-col md:flex-row pb-10 items-center space-y-10 md:space-y-0 md:space-x-16"
+        >
+          <div class="md:w-1/2">
+            <img src="img/car-2.jpg" alt="" />
+          </div>
+          <div class="md:w-1/2 flex flex-col items-center space-y-10">
+            <!-- customer support -->
+            <div class="flex items-start justify-center space-x-5">
+              <a href="#" class="bg-bgBlack px-5 p-4 rounded-lg">
+                <img src="img/phone-icon.png" alt="" />
+              </a>
+              <div class="flex flex-col space-y-2">
+                <h4 class="text-softBlack font-medium text-xl">
+                  Customer Support
+                </h4>
+                <p class="opacity-60">
+                  Aliquam erat volutpat. Integer malesuada turpis id fringilla
+                  suscipit. Maecenas ultrices.
+                </p>
+              </div>
+            </div>
+            <!-- best price  -->
+            <div class="flex items-start justify-center space-x-5">
+              <a href="#" class="bg-bgBlack px-5 p-4 rounded-lg">
+                <img src="img/tag-icon.png" alt="" />
+              </a>
+              <div class="flex flex-col space-y-2">
+                <h4 class="text-softBlack font-medium text-xl">
+                  Best Price Guaranted
+                </h4>
+                <p class="opacity-60">
+                  Aliquam erat volutpat. Integer malesuada turpis id fringilla
+                  suscipit. Maecenas ultrices.
+                </p>
+              </div>
+            </div>
+            <!-- many location -->
+            <div class="flex items-start justify-center space-x-5">
+              <a href="#" class="bg-bgBlack px-5 p-4 rounded-lg">
+                <img src="img/gps-icon.png" alt="" />
+              </a>
+              <div class="flex flex-col space-y-2">
+                <h4 class="text-softBlack font-medium text-xl">
+                  Many Location
+                </h4>
+                <p class="opacity-60">
+                  Aliquam erat volutpat. Integer malesuada turpis id fringilla
+                  suscipit. Maecenas ultrices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- another section -->
+    <section id="view" class="bg-[#eae7e7] py-10">
+      <div class="mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
+        >
+          <div class="md:w-1/2">
+            <img src="img/car-6.jpg" class="rounded-lg" alt="" />
+          </div>
+          <div class="md:w-1/2">
+            <img src="img/car-8.jpg" class="rounded-lg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial section -->
+    <section id="testimonial">
+      <div class="mx-auto px-6 py-10">
+        <h2
+          class="mb-6 font-medium text-softBlack text-3xl md:text-4xl tracking-wider text-center capitalize"
+        >
+          trusted by thousands of happpy customer
+        </h2>
+        <p class="text-center mb-10 leading-7 opacity-60">
+          A high performing web-based car rental system for any rent-a-car
+          company and website
+        </p>
+        <!-- testimony body container -->
+        <div
+          class="mb-14 flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-6 "
+        >
+          <!-- kira testimony -->
+          <div class="bg-[#c4c4c4] p-5 rounded-lg">
+            <div class="flex flex-col space-y-5">
+              <div class="flex items-center justify-between px-5">
+                <div class="flex items-center space-x-4">
+                  <div class="ring-1 rounded-full">
+                    <img src="img/image-kira.jpg" class="rounded-full" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="text-md tracking-wider">Kira Robert</h3>
+                    <p class="opacity-60">Warsaw, Poland</p>
+                  </div>
+                </div>
+                <p class="">4.5</p>
+              </div>
+              <p class="text-softBlack leading-7">
+                "Wow... I am very happy to use this VPN, it turned out to be
+                more than my expectations and so far there have been no
+                problems. LaslesVPN always the best".
+              </p>
+            </div>
+          </div>
+          <!-- daniel testimony -->
+          <div class="bg-[#c4c4c4] p-5 rounded-lg">
+            <div class="flex flex-col space-y-5">
+              <div class="flex items-center justify-between px-5">
+                <div class="flex items-center space-x-4">
+                  <div class="ring-1 rounded-full">
+                    <img src="img/image-daniel.jpg" class="rounded-full" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="text-md tracking-wider">Daniel Robert</h3>
+                    <p class="opacity-60">Warsaw, Poland</p>
+                  </div>
+                </div>
+                <p class="">4.5</p>
+              </div>
+              <p class="text-softBlack leading-7">
+                "Wow... I am very happy to use this VPN, it turned out to be
+                more than my expectations and so far there have been no
+                problems. LaslesVPN always the best".
+              </p>
+            </div>
+          </div>
+          <!-- patrick testimony -->
+          <div class="bg-[#c4c4c4] p-5 rounded-lg">
+            <div class="flex flex-col space-y-5">
+              <div class="flex items-center justify-between px-5">
+                <div class="flex items-center space-x-4">
+                  <div class="ring-1 rounded-full">
+                    <img src="img/image-patrick.jpg" class="rounded-full" alt="" />
+                  </div>
+                  <div class="flex flex-col">
+                    <h3 class="text-md tracking-wider">Patrick Michael</h3>
+                    <p class="opacity-60">Warsaw, Poland</p>
+                  </div>
+                </div>
+                <p class="">4.5</p>
+              </div>
+              <p class="text-softBlack leading-7">
+                "Wow... I am very happy to use this VPN, it turned out to be
+                more than my expectations and so far there have been no
+                problems. LaslesVPN always the best".
+              </p>
+            </div>
+          </div>
+          <!-- end of testmonial -->
+        </div>
+        <!-- next-btn -->
+        <div class="flex items-center justify-between mb-16">
+          <div class="flex items-center space-x-2">
+            <a href="#" class="bg-black py-1.5 px-5 rounded-lg"></a>
+            <a href="#" class="rounded-full p-1.5 bg-[#c4c4c4]"></a>
+            <a href="#" class="rounded-full p-1.5 bg-[#c4c4c4]"></a>
+            <a href="#" class="rounded-full p-1.5 bg-[#c4c4c4]"></a>
+          </div>
+          <div class="flex items-center space-x-5 md:pr-40">
+           <a href="#"><img src="img/left-arrow.png" class="w-4" alt=""></a> 
+           <a href="#"><img src="img/right-arrow.png" class="w-4" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer" class="bg-[#c4c4c4] py-6">
+      <div class="mx-auto px-8 py-10">
+        <!-- logo and menus container -->
+        <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0-">
+          <!-- logo and social container -->
+          <div class="flex flex-col items-center md:items-start space-y-10">
+            <!-- logo -->
+            <img src="img/logo.jpeg" alt="" class="w-32 h-24 rounded-2xl" />
+            <p class="text-softBlack text-center md:text-start max-w-xs">
+              Our vision is to provide convenience and help increase
+              your sales business
+            </p>
+            <!-- social icons -->
+            <div class="flex items-center space-x-7">
+              <a href="#" class="bg-softBlack rounded-full">
+                <img src="img/facebook-icon.png"  alt="">
+              </a>
+              <a href="#" class="bg-softBlack rounded-full">
+                <img src="img/twitter.icon.png"  alt="">
+              </a>
+              <a href="#" class="bg-softBlack rounded-full">
+                <img src="img/instagram-icon.png"  alt="">
+              </a>
+            </div>
+          </div>
+          <!-- menu container -->
+          <div class="flex flex-col md:flex-row items-center md:space-x-16 lg:space-x-36 space-y-7 md:space-y-0 lg:pr-16">
+            <!-- about -->
+            <div class="flex flex-col items-center md:items-start space-y-4 md:space-y-7">
+              <h3 class="text-softBlack font-semibold md:mb-5">About</h3>
+              <a href="#" class="opacity-50">How it works</a>
+              <a href="#" class="opacity-50">Featured</a>
+              <a href="#" class="opacity-50">Partnership</a>
+              <a href="#" class="opacity-50">Business Relation</a>
+            </div>
+            <!-- community -->
+            <div class="flex flex-col items-center md:items-start space-y-4 md:space-y-7">
+              <h3 class="text-softBlack font-semibold md:mb-5">Community</h3>
+              <a href="#" class="opacity-50">Events</a>
+              <a href="#" class="opacity-50">Blog</a>
+              <a href="#" class="opacity-50">Podcast</a>
+              <a href="#" class="opacity-50">Invite a friend</a>
+            </div>
+            <!-- socials -->
+            <div class="flex flex-col items-center md:items-start space-y-4 md:space-y-7">
+              <h3 class="text-softBlack font-semibold md:mb-5">Socials</h3>
+              <a href="#" class="opacity-50">Discord</a>
+              <a href="#" class="opacity-50">Instagram</a>
+              <a href="#" class="opacity-50">Twitter</a>
+              <a href="#" class="opacity-50">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <!-- copyright and privacy -->
+        <div class="border-b border-gray-500 py-8"></div>
+        <div class=" mt-6 flex flex-col md:flex-row items-center justify-between space-y-4">
+          <p class="text-softBlack text-xl">
+            &copy2024 <span class="text-md">Micolexy. All rights reserved</span>
+          </p>
+          <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-16">
+            <a href="#" class="text-softBlack text-xl font-sans">
+              Privacy & Policy
+            </a>
+            <a href="#" class="text-softBlack text-xl font-sans">
+              Terms & Condition
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
